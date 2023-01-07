@@ -11,10 +11,12 @@ const truncate = (input, len) =>
 export const StyledButton = styled.button`
   padding: 10px;
   border: 1px solid white;
-  background: none
+  font-family: 'Rubik Distressed', cursive;
+  background: none;
+  color: #fff;
   padding: 10px;
-  color: black;
-  width: 100px;
+  font-size:18px;
+  width: 150px;
   cursor: pointer;
   box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
@@ -24,12 +26,14 @@ export const StyledButton = styled.button`
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
   }
+
+ 
 `;
 
 export const StyledRoundButton = styled.button`
   padding: 10px;
  // border-radius: 100%;
-  border: none;
+  border: 1px solid white;
   background: none;
   padding: 10px;
   font-weight: bold;
@@ -197,7 +201,7 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "black" }}
-        image={CONFIG.SHOW_BACKGROUND ? "" : null}
+        image={CONFIG.SHOW_BACKGROUND ? "/images/signal.png" : null}
       >
  
         <s.SpacerSmall />
@@ -221,9 +225,10 @@ function App() {
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 50,
+                fontSize: 44,
                 fontWeight: "bold",
                 color: "#fff",
+                fontFamily: " 'Rubik Distressed', cursive"
               }}
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
@@ -242,7 +247,7 @@ function App() {
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
                 <s.TextTitle
-                  style={{ textAlign: "center", color: "#fff" }}
+                  style={{ textAlign: "center", color: "#fff", fontFamily: "'Nerko One', cursive" }}
                 >
                   The sale has ended.
                 </s.TextTitle>
@@ -268,7 +273,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  {/* Excluding gas fees. */}
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -278,6 +283,8 @@ function App() {
                       style={{
                         textAlign: "center",
                         color: "var(--accent-text)",
+                        fontFamily: "'Nerko One', cursive",
+                        fontSize: "24px"
                       }}
                     >
                       Connect to the {CONFIG.NETWORK.NAME} network
@@ -299,6 +306,7 @@ function App() {
                           style={{
                             textAlign: "center",
                             color: "var(--accent-text)",
+                            fontFamily: "'Nerko One', cursive"
                           }}
                         >
                           {blockchain.errorMsg}
@@ -312,6 +320,8 @@ function App() {
                       style={{
                         textAlign: "center",
                         color: "var(--accent-text)",
+                        fontFamily: "'Nerko One', cursive",
+                        fontSize: "22px"
                       }}
                     >
                       {feedback}
@@ -333,6 +343,7 @@ function App() {
                         style={{
                           textAlign: "center",
                           color: "var(--accent-text)",
+                          fontFamily: "'Nerko One', cursive"
                         }}
                       >
                         {mintAmount}
@@ -378,6 +389,8 @@ function App() {
             style={{
               textAlign: "center",
               color: "#fff",
+              fontFamily: "'Nerko One', cursive",
+              fontSize: "24px"
             }}
           >
             Please make sure you are connected to the right network (
@@ -389,6 +402,8 @@ function App() {
             style={{
               textAlign: "center",
               color: "#fff",
+              fontFamily: "'Nerko One', cursive",
+              fontSize: "24px"
             }}
           >
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
