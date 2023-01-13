@@ -47,7 +47,7 @@ function App() {
       <Hero />
       <Story />
       <Beginner />
-      <VideoPage />
+      {/* <VideoPage /> */}
       <Mint />
       <MothsMatter />
       <Roadmaps />

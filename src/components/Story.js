@@ -5,9 +5,8 @@ function Story() {
     <Container>
       <Wrap>
         <Text>
-        <p><span>I begin</span> 12 months ago after spending the best part of 3 years buying and playing NFT games. I saw an opportunity to bring a gaming community together to help climate change and more importantly our environment.
-            The Metamoths will mainly be a gaming community ecosystem and with this, we will do our part to protect and preserve the ecosystem of moth’s and butterfly’s environments in our world.</p>
-        <p>The proposal to Metamoths the brand will have its ecosystem With</p>
+        <p>Metamoths is a revolutionary new gaming company that introduces a unique concept of half moth half human creatures called Metamoths, who come from a planet called Pollinate. The company aims to build a strong community and an exciting game that will change the way we experience the gaming world. The team behind Metamoths is committed to taking the project to the top of the gaming world, and is always open to new ideas and suggestions from the community. Whether you're a hardcore gamer or just getting started, Metamoths is the perfect place for you to explore and experience the world of Metamoths.</p>
+        
         <ul>
             <li>Website</li>
             <li>Community</li>

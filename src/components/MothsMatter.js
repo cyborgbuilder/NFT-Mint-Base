@@ -92,7 +92,7 @@ const SliderDiv = styled.div`
 const ImageBox = styled.div`
     width: 90%;
     padding: 0 20px;
-    background: #FFFDD0;
+    background: #fff;
     border-radius: 25px;
     opacity: 0.85;
 
